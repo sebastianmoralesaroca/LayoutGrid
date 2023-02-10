@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+body .div1 {
+  background-color: black;
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  color: grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+body .div2 {
+  background-color: red;
+  display: inline-block;
+  width: 79.7%;
+  height: 50px;
+  color: grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+body .div3 {
+  background-color: aqua;
+  display: block;
+  width: 100%;
+  height: 500px;
+  color: grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+body .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body .grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+body .grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+body .grid > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+body .grid > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+body .grid .div4 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: darkblue;
+}
